@@ -1,50 +1,81 @@
 <!doctype html>
 <html>
 <head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; word-wrap:break-word; }
-    </style>
+  <title>Bankr</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+  <style>
+  body   {
+    padding-top:80px; word-wrap:break-word;
+  }
+  .row {
+    text-align:center;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  </style>
 </head>
 <body>
-<div class="container">
-
-    <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
-        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
 
     <div class="row">
-
-        <!-- LOCAL INFORMATION -->
-        <div class="col-sm-6">
+      <div class="medium-12 columns">
+        <h1 class="text-center">Account Information</h1>
+          <div class="page-header text-center">
             <div class="well">
-                <h3><span class="fa fa-user"></span> Account</h3>
+              <img src="http://www.lorempixel.com/150/150/people/2" alt="">
+              <h3><span class="fa fa-user"></h3>
+              <p>
+                <strong>name</strong>: <%= user.local.name %><br>
+                <strong>Email</strong>: <%= user.local.email %><br>
+              </p>
+          </div>
+      </div>
+    </div>
+    <hr>
 
-                <% if (user.local.email) { %>
-                    <p>
-                        <strong>id</strong>: <%= user._id %><br>
-                        <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>password</strong>: <%= user.local.password %>
-                    </p>
-
-                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
-                <% } else { %>
-                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
-                <% } %>
-
+    <div class="row">
+      <div class="medium-4 columns">
+        <div class="well">
+          <h2 align=center>Post Transactions</h2>
+          <form action="/transactions" method="post">
+            <div class="form-group">
+              <label>Amount: </label>
+              <input name=dollars type="number" placeholder="$"/>
             </div>
+            <div class="form-group">
+              <label>Description: </label>
+              <input name=description type="text" placeholder="description"/>
+            </div>
+
+            <button class='button round' type=submit>Add Transaction</button>
+          </form>
         </div>
-
+      </div>
+      <div class="medium-8 columns text-center panel">
+        <div class="well">
+          <h1 class='text-center'>Transaction Log</h1>
+          <h2>Balance:<span style="color: green">$<%= user.local.balance %></span></h2>
+        </div>
+        <div class="medium-12 columns">
+          <table>
+            <tr>
+              <% for(var i = 0; i< user.local.transactions.length; i++) { %>
+                <td><strong>$<%= user.local.transactions[i].amount%></strong></td><td> <%= user.local.transactions[i].description%></td><td> <%= user.local.transactions[i].date%> </td>
+                <% } %>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
 
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-    </div>
 
-</div>
-</body>
-</html>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.min.js"></script>
+  </body>
+  </html>
