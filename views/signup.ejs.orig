@@ -13,7 +13,11 @@
   <br>
     <div class="row">
       <div class="medium-12 columns panel">
+<<<<<<< HEAD
           <div class="text-center">   <img src="https://raw.githubusercontent.com/dlombardi/Bankr/master/views/images/letstart.png" alt="Lets Start">  </div>
+=======
+          <h1 class="text-center"><span class="fa fa-balance-scale"></span> Welcome</h1>
+>>>>>>> 0ff69af7c21c0471068523980aa9c4fedae3de1d
       </div>
     </div>
   <hr>
