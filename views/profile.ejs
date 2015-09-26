@@ -22,10 +22,10 @@
 
     <div class="row">
       <div class="medium-12 columns">
-        <h1 class="text-center">Account Information</h1>
+        <img src="https://raw.githubusercontent.com/dlombardi/Bankr/master/views/images/accountInfo.png" alt="account info">
           <div class="page-header text-center">
             <div class="well">
-              <img src="http://www.lorempixel.com/150/150/people/2" alt="">
+              <img src="http://www.lorempixel.com/150/150/people/2" alt="account information">
               <h3><span class="fa fa-user"></h3>
               <p>
                 <strong>name</strong>: <%= user.local.name %><br>
@@ -39,7 +39,7 @@
     <div class="row">
       <div class="medium-4 columns">
         <div class="well">
-          <h2 align=center>Post Transactions</h2>
+          <h2 align=center> <img src="https://raw.githubusercontent.com/dlombardi/Bankr/master/views/images/postTransactions.png" alt="post transactions"> </h2>
           <form action="/transactions" method="post">
             <div class="form-group">
               <label>Amount: </label>
@@ -56,13 +56,11 @@
       </div>
       <div class="medium-8 columns text-center panel">
         <div class="well">
-          <h1 class='text-center'>Transaction Log</h1>
+          <div class='text-center'> <img src="https://raw.githubusercontent.com/dlombardi/Bankr/master/views/images/transactionLog.png" alt="Transaction log"> </div>
           <h2>Balance:<span style="color: green">$<%= user.local.balance %></span></h2>
         </div>
         <div class="medium-12 columns">
           <table>
-
-
 
 <% for(var i = 0; i< user.local.transactions.length; i++) { %>
             <tr>   
