@@ -16,6 +16,11 @@
     list-style-type: none;
   }
 
+  #account{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
   </style>
 </head>
 <body>
@@ -25,7 +30,7 @@
         <img src="https://raw.githubusercontent.com/dlombardi/Bankr/master/views/images/accountInfo.png" alt="account info">
           <div class="page-header text-center">
             <div class="well">
-              <img src="http://www.lorempixel.com/150/150/people/2" alt="account information">
+              <img src="http://www.lorempixel.com/150/150/people/2" id="account" alt="account information">
               <h3><span class="fa fa-user"></h3>
               <p>
                 <strong>name</strong>: <%= user.local.name %><br>
@@ -50,7 +55,7 @@
               <input name=description type="text" placeholder="description"/>
             </div>
 
-            <button class='button round' type=submit>Add Transaction</button>
+            <button type=submit>Add Transaction</button>
           </form>
         </div>
       </div>
