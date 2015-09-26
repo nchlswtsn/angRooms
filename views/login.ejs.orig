@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<<<<<<< HEAD
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+=======
+    <title>Bankr login</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body{ padding-top:80px; }
+    </style>
+</head>
+<body>
+
+<<<<<<< HEAD
+  <div class="row">
+    <div class="medium-12 columns panel">
+        <h1 class="text-center"><span class="fa fa-sign-in"></span> Login</h1>
+    </div>
+  </div>
+  <hr>
+=======
+    <h1>Bankr.<span class="fa fa-usd"></span></h1>
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+<<<<<<< HEAD
+        <% } %>
+
+        <!-- LOGIN FORM -->
+        <form action="/login" method="post">
+          <fieldset>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" class="form-control" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" name="password" required>
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-lg">Login</button>
+          </fieldset>
+        </form>
+
+        <hr>
+
+        <p>Need an account? <a href="/signup">Signup</a></p>
+        <p>Or go <a href="/">home</a>.</p>
+=======
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form action="/login" method="post">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" placeholder = "email" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" placeholder = "password" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+    </form>
+
+    <hr>
+
+    <p>Join us <a href="/signup">Signup</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+    <div class="text-center">
+        <p></p>
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+    </div>
+  </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<<<<<<< HEAD
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+=======
+    <title>Bankr</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body         { padding-top:80px; }
+    </style>
+</head>
+<body>
+<<<<<<< HEAD
+
+  <div class="row">
+    <div class="medium-12 columns panel expand">
+      <h1 class="text-center"><span class="fa fa-lock"></span> Bankr</h1>
+      <h3 class="text-center">Bank Safe, Bank Smart</h3>
+      <row class="medium-6 columns text-center">
+        <a href="/login" class="button"><span class="fa fa-user"></span> Local Login</a>
+      </row>
+      <row class="medium-6 columns text-center">
+        <a href="/signup" class="button"><span class="fa fa-user"></span> Local Signup</a>
+      </row>
+=======
+<div class="container" id="mainlogin">
+
+    <div class="jumbotron text-center">
+        <div> <img src="banksafe.png" alt="Hardr, Bettr, Fastr, Strongr, Bankr" height="42" width="400"> </div>
+
+        <p>Start an account with Bankr today. </p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>member login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Join us</a>
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+    </div>
+  </div>
+
+
+<<<<<<< HEAD
+=======
+    <div class="text-center">
+        <p>Founded in 2015</p>
+    </div>
+>>>>>>> 30866a8bd4d69d90821be45e0bfdc221cb4b018b
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.min.js"></script>
+</body>
+</html>
