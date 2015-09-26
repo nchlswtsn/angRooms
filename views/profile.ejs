@@ -61,11 +61,15 @@
         </div>
         <div class="medium-12 columns">
           <table>
-            <tr>
-              <% for(var i = 0; i< user.local.transactions.length; i++) { %>
+
+
+
+<% for(var i = 0; i< user.local.transactions.length; i++) { %>
+            <tr>   
                 <td><strong>$<%= user.local.transactions[i].amount%></strong></td><td> <%= user.local.transactions[i].description%></td><td> <%= user.local.transactions[i].date%> </td>
-                <% } %>
             </tr>
+<% } %>
+
           </table>
         </div>
       </div>
