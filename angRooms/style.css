@@ -1,0 +1,12 @@
+body {
+  background-color: silver;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  margin-left: 35%;
+}
+td {
+  border: 1px solid black;
+}

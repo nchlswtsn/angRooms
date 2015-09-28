@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="roomApp">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="mainCtrl">
+
+  <label for="addRoom">Add Room</label>
+  <input ng-model="newRoom" type="text">
+  <button ng-click="addRoom(newRoom)">Add Room</button>
+  <br>
+  <br>
+  <br>
+
+  <div class="addItem">
+    <label for="itemName">Item Name</label>
+    <input ng-model="itemName" type="text">
+    <label for="itemQuantity">Item Quantity</label>
+    <input ng-model="itemQuantity" type="text">
+    <label for="itemCost">Item Cost</label>
+    <input ng-model="itemCost" type="text">
+    <label for="roomSelected">Select Room</label>
+    <select>
+      <option ng-repeat="room in rooms">{{ room }}</option>
+    </select>
+    <button ng-click="addItem(itemName, itemQuantity, itemCost, roomSelected)">Add Item</button>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <select>
+    <option ng-click="roomCost()">{{ room }}</option>
+  </select>
+  <h2>{{ roomCost }}</h2>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <table>
+      <tbody>
+        <tr>
+          <td>Item Name</td>
+          <td>Item Quantity</td>
+          <td>Item Cost</td>
+          <td>Room</td>
+        </tr>
+        <tr ng-repeat="item in items[0]">
+          <td>{{ item[0][0] }}</td>
+          <td>{{ item[0][1] }}</td>
+          <td>{{ item[0][2] }}</td>
+          <td>{{ item[0][3] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
